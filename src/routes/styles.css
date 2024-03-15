@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: 'Inter-tight';
 	font-display: swap;
@@ -11,6 +12,7 @@
 	font-weight: 700;
 	src: url('font/InterTight-SemiBold.woff2') format('woff2');
 }
+*/
 
 :root {
 	--font-body: 'Inter-tight';
