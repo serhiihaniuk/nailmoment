@@ -17,12 +17,6 @@
 
 <svelte:head>
 	<title>Nail Moment</title>
-	<link
-		rel="preload"
-		href="font/InterTight-Regular.woff2"
-		as="font"
-		crossOrigin="anonymous"
-	/>
 	<link rel="preload" as="image" href={logo} />
 	<meta name="description" content="Nail moment" />
 </svelte:head>
