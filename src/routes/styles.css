@@ -1,25 +1,22 @@
-/*
 @font-face {
 	font-family: 'Inter-tight';
 	font-display: swap;
 	font-weight: 500;
-	src: url('font/InterTight-Regular.woff2') format('woff2');
+	src: url('src/lib/font/InterTight-Regular.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Inter-tight';
 	font-display: swap;
 	font-weight: 700;
-	src: url('font/InterTight-SemiBold.woff2') format('woff2');
+	src: url('src/lib/font/InterTight-SemiBold.woff2') format('woff2');
 }
-*/
 
 :root {
 	--font-body: 'Inter-tight';
 	--bg-color: #000;
 	--text-color-header: #fff;
 	--text-color-secondary: rgb(229, 231, 235);
-	--a: 1;
 
 	--container-width: 1024px;
 	--highlight-color: var(--pink); /* colors */
