@@ -1,59 +1,35 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+<script lang="ts">
+	import logo from '$lib/images/logo.png';
+	import { fade, fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import Link from '../shared/Link.svelte';
+	import ConferenceThemes from '../section/ConferenceThemes.svelte';
+	import Hero from '../section/Hero.svelte';
+	import Buy from '../section/Buy.svelte';
+
+	let loaded = false;
+	onMount(() => (loaded = true));
+	let highlight_green = true;
+	let highlight_pink = false;
+
+	function highlight(color: 'green' | 'pink') {
+		highlight_green = color === 'green';
+		highlight_pink = color === 'pink';
+	}
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Nail Moment</title>
+	<link
+		rel="preload"
+		href="src/lib/font/InterTight-Regular.woff2"
+		as="font"
+		crossOrigin="anonymous"
+	/>
+	<link rel="preload" as="image" href={logo} />
+	<meta name="description" content="Nail moment" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+<Hero />
+<ConferenceThemes />
+<Buy />
