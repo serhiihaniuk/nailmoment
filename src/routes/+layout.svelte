@@ -1,4 +1,6 @@
 <script>
+	import InterTightRegular from '$lib/font/InterTight-Regular.woff2';
+	import InterTightSemiBold from '$lib/font/InterTight-SemiBold.woff2';
 	import './styles.css';
 </script>
 
