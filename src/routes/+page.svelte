@@ -1,8 +1,7 @@
 <script lang="ts">
 	import logo from '$lib/images/logo.png';
-	import { fade, fly } from 'svelte/transition';
+	import font from '$lib/font/InterTight-Regular.woff2';
 	import { onMount } from 'svelte';
-	import Link from '../shared/Link.svelte';
 	import ConferenceThemes from '../section/ConferenceThemes.svelte';
 	import Hero from '../section/Hero.svelte';
 	import Buy from '../section/Buy.svelte';
@@ -20,12 +19,7 @@
 
 <svelte:head>
 	<title>Nail Moment</title>
-	<link
-		rel="preload"
-		href="src/lib/font/InterTight-Regular.woff2"
-		as="font"
-		crossOrigin="anonymous"
-	/>
+	<link rel="preload" href={font} as="font" crossOrigin="anonymous" />
 	<link rel="preload" as="image" href={logo} />
 	<meta name="description" content="Nail moment" />
 </svelte:head>
