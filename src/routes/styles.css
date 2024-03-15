@@ -1,5 +1,5 @@
 :root {
-	--font-body: 'Inter Tight';
+	--font-body: 'Montserrat';
 	--bg-color: #000;
 	--text-color-header: #fff;
 	--text-color-secondary: rgb(229, 231, 235);
@@ -51,7 +51,7 @@ body {
 	color: var(--text-color-secondary);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: 'Inter Tight', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
