@@ -19,6 +19,12 @@
 <svelte:head>
 	<title>Nail Moment</title>
 	<link rel="preload" as="image" href={logo} />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap"
+		rel="stylesheet"
+	/>
 	<meta name="description" content="Nail moment" />
 </svelte:head>
 

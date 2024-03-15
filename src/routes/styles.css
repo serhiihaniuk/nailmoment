@@ -1,19 +1,5 @@
-@font-face {
-	font-family: 'Inter-tight';
-	font-display: swap;
-	font-weight: 500;
-	src: url('font/InterTight-Regular.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Inter-tight';
-	font-display: swap;
-	font-weight: 700;
-	src: url('font/InterTight-SemiBold.woff2') format('woff2');
-}
-
 :root {
-	--font-body: 'Inter-tight';
+	--font-body: 'Inter Tight';
 	--bg-color: #000;
 	--text-color-header: #fff;
 	--text-color-secondary: rgb(229, 231, 235);
@@ -65,7 +51,10 @@ body {
 	color: var(--text-color-secondary);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-weight: var(--font-weight);
+	font-family: 'Inter Tight', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 }
 .highlight {
 	font-size: 24px;
