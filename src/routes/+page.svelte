@@ -22,7 +22,7 @@
 	<title>Nail Moment</title>
 	<link
 		rel="preload"
-		href="font/InterTight-Regular.woff2"
+		href="src/lib/font/InterTight-Regular.woff2"
 		as="font"
 		crossOrigin="anonymous"
 	/>
