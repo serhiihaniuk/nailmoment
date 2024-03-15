@@ -17,6 +17,7 @@
 	--bg-color: #000;
 	--text-color-header: #fff;
 	--text-color-secondary: rgb(229, 231, 235);
+	--a: 1;
 
 	--container-width: 1024px;
 	--highlight-color: var(--pink); /* colors */
