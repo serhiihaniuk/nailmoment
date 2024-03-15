@@ -2,14 +2,14 @@
 	font-family: 'Inter-tight';
 	font-display: swap;
 	font-weight: 500;
-	src: url('src/lib/font/InterTight-Regular.woff2') format('woff2');
+	src: url('$lib/font/InterTight-Regular.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Inter-tight';
 	font-display: swap;
 	font-weight: 700;
-	src: url('src/lib/font/InterTight-SemiBold.woff2') format('woff2');
+	src: url('$lib/font/InterTight-SemiBold.woff2') format('woff2');
 }
 
 :root {
